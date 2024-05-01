@@ -1,23 +1,7 @@
-//  import  express ,{Request ,Response,Express} from "express";
-//  import dotenv from "dotenv";
-// // const dotenv = require('dotenv');
-
-// dotenv.config();
-
-// const app :Express= express();
-// const port = process.env.PORT || 3000;
-
-// app.get('/', (req:Request, res:Response) => {
-//   res.send('Express + TypeScript Server');
-// });
-
-// app.listen(port, () => {
-//   console.log(`[server]: Server is running at http://localhost:${port}`);
-// });
 
 import axios from "axios";
-// import { createOrder } from "./createOrder";
-// import cancellAll from "./cancelAll";
+import { createOrder } from "./CreateOrder";
+import { cancelAll } from "./CancelOrder";
 
 import { DepthManager } from "./DepthManager";
 
@@ -48,23 +32,29 @@ setInterval(() => {
     console.log(`You can convert ${initialInr} INR into ${canGetInr2} INR`)
 }, 3000)
 
-// const highestBid = solInrMarket.getDepth().maxbid;
+
 // const parsedHighestBid: number = parseFloat(highestBid);
 // if (!isNaN(parsedHighestBid)) {
 //     console.log((parsedHighestBid + 0.01).toFixed(3));
 // } else {
 //     console.log("highestBid is not a valid number.");
 // }
-console.log(`{solInrMarket.getDepth().maxbid}`)
-// async function main() {
+
+// console.log(`{solInrMarket.getDepth().maxbid}`)
+
+
+
+async function main() {
     
-//     const highestBid = solInrMarket.getDepth().maxbid;
-//     console.log(`placing order for ${parseFloat(highestBid) + 0.01}`);
-//     await createOrder("buy", "XAIINR", (parseFloat(highestBid) + 0.01).toFixed(3), 10, Math.random().toString())
-//     await new Promise((r) => setTimeout(r, 10000));
-//     await cancellAll("XAIINR");
-//     await new Promise((r) => setTimeout(r, 1000));
-//     main();
-// }
+    const highestBid = solInrMarket.getDepth().maxbid;
+    
+    console.log(highestBid);
+    // console.log(`placing order for ${parseFloat(highestBid) + 0.01}`);
+    // await createOrder("buy", "XAIINR", (parseFloat(highestBid) + 0.01).toFixed(3), 10, Math.random().toString())
+    // await new Promise((r) => setTimeout(r, 10000));
+    // await cancelAll("XAIINR");
+    // await new Promise((r) => setTimeout(r, 1000));
+    main();
+}
 
 
