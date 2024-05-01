@@ -14,12 +14,6 @@ Note: Here we are not considering the platform fees.
 ![Screenshot (23)](https://github.com/vrajtalati/Trading_Bot/assets/77099540/3d304f55-c7d4-4260-b95c-cc3e5384d21f)
 
 
-## Features
-
-- 
-- Live previews
-- Fullscreen mode
-- Cross platform
 
 
 ## Tech Stack
